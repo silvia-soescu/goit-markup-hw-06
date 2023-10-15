@@ -924,47 +924,54 @@ textarea:focus {
     cursor: pointer;
     font-size: 14px;
     padding: 0;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     position: relative;
+    
  }
 
-.terms-and-conditions-label svg {
+ .checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }
+.checkbox-label svg {
     width: 13px;
     height: 13px;
     border-radius: 4px;
     cursor: pointer;
-    padding-top: 3px;
-    top: calc(50% - 7.5px);
-    left: 18px;
+    padding-top: 2px;
+    top: 0;
+    left: 0;
     background-color: var(--visited-link-color);
     position: absolute;
 }
 
-.terms-and-conditions-label > svg {
+.checkbox-label > svg {
     visibility: hidden;
 }
 
-/* .terms-and-conditions-input:not(:checked) {
-    visibility: hidden;
+.checkbox-input:not(:checked) {
+    border: 1px solid var(--background-color);
 
-} */
+}
 
- .terms-and-conditions-input:checked {
-     background-color: var(--visited-link-color);
- }
-
-.terms-and-conditions-input:checked + label > .icon-checkbox {
+.checkbox-input:checked + label > svg {
     display: none;
 }
 
 
- .terms-and-conditions-agreement {
+ .terms-and-conditions-text {
      font-size: 14px;
      font-weight: 400;
      line-height: 24px;
      letter-spacing: 0.03em;
      color: #757575;
      cursor: pointer;
+ }
+
+ .terms-and-conditions-text a:visited {
+    color: var(--visited-link-color);
  }
 
  .main-form-button {
