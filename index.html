@@ -467,6 +467,29 @@
             </li>
           </ul>
         </div>
+
+        <form class="newsletter-container">
+          <label class="footer-label" for="email"
+            >Subscribe to the newsletter</label
+          >
+          <div class="subscribe-container">
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              autocomplete="off"
+            />
+            <button class="subscribe-button" type="submit">
+              <span>Subscribe</span>
+              <svg>
+                <use href="/images/symbol-defs.svg#icon-icon-send" />
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
@@ -549,7 +572,7 @@
 
           <div class="terms-and-conditions-container">
             <input
-              class="terms-and-conditions-check"
+              class="terms-and-conditions-input"
               type="checkbox"
               name="terms-and-conditions-check"
               id="terms-and-conditions-check"
