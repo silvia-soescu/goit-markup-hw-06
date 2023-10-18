@@ -577,6 +577,10 @@ padding-top: 94px;
     width: 358px;
     height: 50px; }
 
+.footer-input:focus {
+    border: 1px solid var(--visited-link-color);
+
+}
 
 .subscribe-button {
     width: 200px;
@@ -602,6 +606,7 @@ padding-top: 94px;
     flex-shrink: 0;
    
 }
+
 
 
 /* Portofolie Buttons */
@@ -955,17 +960,19 @@ textarea:focus {
  }
 
  .checkbox-input {
+    width: 16px;
+     height: 15px;
     z-index: 1;
  }
 
 .checkbox-label svg {
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     border-radius: 2px;
     cursor: pointer;
-    padding-top: 1px;
+    padding-top: 2px;
     top: calc(50%-7.5px);
-    left: 0;
+    left: 1px;
     background-color: var(--visited-link-color);
     position: absolute;
 }
