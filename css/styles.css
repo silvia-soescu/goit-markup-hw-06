@@ -45,13 +45,13 @@ body h2 {
 .generic-header {
     background-color: #fff;
     border-bottom: 1px solid #ececec;
-    width: 1600px;
     margin: 0 auto;
     padding: 0;
 }
 
 .global-header {
-    width: 1200px;
+    width: 100vw;
+    max-width: 1200px;
     padding: 0;
     margin: 0 auto;
     display: flex;
@@ -109,6 +109,7 @@ body h2 {
 }
 
 .contact-number {
+    width: 133px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,15 +178,15 @@ body h2 {
 /* main styles */
 
 .hero-section {
-    width: 1600px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     background-color: #2F303A;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-img\.jpeg);
     background-repeat: no-repeat;
     background-size: cover; 
-
 }
-
 
 .hero-section-title {
     text-align: center;
@@ -231,7 +232,7 @@ body h2 {
 /* what we do styles */
 
 .content-section {
-    width: 1600px;
+    width: 100vw;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -242,7 +243,7 @@ body h2 {
 }
 
 .hero-section-list ul {
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -267,22 +268,23 @@ body h2 {
 }
 
 .what-we-do-section {
-    width: 1200px;
+    width: 100%;
     padding: 0px 15px;
     align-items: center;
     box-sizing: border-box;
     padding: 94px 0;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .what-we-do-section ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
     padding-top: 50px;
     padding-bottom: 94px;
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0;
 }
 
@@ -319,21 +321,20 @@ body h2 {
 
 .our-team-section {
     background-color: #F5F4FA;
-    width: 1600px;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
     padding-top: 94px;
 }
 
 .our-team-section ul {
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 30px;
     padding: 50px 0 94px 0;
-    margin: auto;
+    margin: 0;
 }
 
 .our-team-section h3 {
@@ -352,7 +353,7 @@ body h2 {
 .team-member-card {
     max-width: 100%;
     height: 428px;
-    margin: 0 auto;
+    margin: 0;
     border-radius: 4px;
     overflow: hidden;
     background-color: #fff;
@@ -460,7 +461,8 @@ padding-top: 94px;
 .footer-container {
     display: flex;
     align-items: center;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 
 }
@@ -618,7 +620,7 @@ padding-top: 94px;
 }
 
 .portofolio-buttons {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
     padding-top: 94px;
@@ -680,13 +682,22 @@ padding-top: 94px;
 
 .portofolio-content {
     background-color: #fff;
-    width: 1600px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
 
+.portofolio-list {
+    max-width: 1200px;  
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
 .portofolio-list ul {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -696,7 +707,7 @@ padding-top: 94px;
 }
 
 .portofolio-cards {
-    width: 1200px;
+    max-width: 1200px;
     border-radius: 4px;
     background-color: #fff;
     flex-basis: calc((100% - 90px) / 3)
@@ -710,6 +721,7 @@ padding-top: 94px;
 }
 
 .portofolio-parent {
+    width: 370px;
     position: relative;
     overflow: hidden;
 }
@@ -718,8 +730,8 @@ padding-top: 94px;
 position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 370px;
+        height: 404px;
     opacity: 0.9;
     background-color: var(--visited-link-color);
     transform: translatey(100%);
@@ -743,6 +755,7 @@ position: absolute;
 }
 
 .portofolio-item {
+    width: 370px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
@@ -770,6 +783,7 @@ position: absolute;
 
 .portofolio-cards:focus,
 .portofolio-cards:hover {
+    width: 370px;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2),
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -1026,3 +1040,15 @@ input:checked {
     transition: background-color var(--transition),
             color var(--transition);
  }
+
+ /* Tablet */
+
+@media screen and (min-width: 768px) {
+
+
+}
+    /* Desktop */
+
+@media screen and (min-width: 1158px) {
+    
+}
